@@ -1,0 +1,22 @@
+-----Test 2-----
+
+* The programming language used is Javascript (NodeJS)
+
+* Specified the entry path for the files
+
+* Created hepler method for getting quater from a given date
+
+* Specified the result path (where the resulting table would be)
+
+* Converted XLSX to JSON using a custom built module (internally using xlsx javascript module)
+
+* Iterated over the products, years and quaters of the transactions to:
+	> get total amount
+	> get total quantity
+	> calculate average price
+
+* Created a JSON result using results gotten from the iteration
+
+* Filtered result to remove rows without average price values (Some products don't exist in some quaters of the some years).
+
+* Used the custom module created in Test 1 to convert the filtered JSON data to CSV file (so the result is a CSV table)

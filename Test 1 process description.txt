@@ -1,0 +1,20 @@
+-----Test 1-----
+
+* The programming language used is Javascript (NodeJS)
+
+* Specified the entry path for the files
+
+* Merged the files (also specifying a location for the merged files)
+
+* Specified the result path (where the resulting table would be)
+
+* Created a method to convert the files into JSON format
+	> Structured the data by using the document pattern to identify each fied in the table
+	> Operated on the data
+	> Created a JSON containing the data
+
+//* Created a module to convert JSON to CSV (used an external module internally):
+//	> It was customized to specifically to accomodate the application
+//	> The idea was to make it reusable
+
+* Used the module to convert the resuting JSON data created earlier to CSV file (so the result is a CSV table)

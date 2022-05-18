@@ -1,0 +1,18 @@
+-----Test 2b-----
+
+* The programming language used is Javascript (NodeJS)
+
+* Specified the entry path for the files
+
+* Specified the result path (where the resulting table would be)
+
+* Converted XLSX to JSON using a custom built module (internally using xlsx javascript module)
+
+* Iterated over the years of the transactions to:
+	> get transaction for last year with the same quater
+	> get transaction for last year on the 4th quater
+	> set the resulting JSON to contain average price from the last year transaction
+	> set the resulting JSON to contain average price from last year 4th quater
+	> set the average prices to "Not applicable" when there is no average price for the last year or last year 4th quater
+
+* Used the custom module created in Test 1 to convert the resulting JSON data to CSV file (so the result is a CSV table)

@@ -3,9 +3,9 @@ const fs = require("fs/promises");
 const asyncJsonToCSV = require("../modules/asyncJsonToCSV");
 
 //This is the entry File
-// const filePath = "/assets/2021_11_30.txt"; //First test
-// const filePath = "/assets/2021_12_04.txt"; //Second test
-const filePath = "src/assets/2021_12_05.txt"; //Third test
+const filePath = "src/assets/2021_11_30.txt"; //First test
+// const filePath = "src/assets/2021_12_04.txt"; //Second test
+// const filePath = "src/assets/2021_12_05.txt"; //Third test
 
 const file = appRoot.resolve(filePath);
 

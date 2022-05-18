@@ -3,11 +3,22 @@ const fs = require("fs/promises");
 const asyncJsonToCSV = require("../modules/asyncJsonToCSV");
 
 //This is the entry File
-const filePath = "src/assets/2021_11_30.txt"; //First test
-// const filePath = "src/assets/2021_12_04.txt"; //Second test
-// const filePath = "src/assets/2021_12_05.txt"; //Third test
+const filePath1 = "src/assets/2021_11_30.txt"; //First test
+const filePath2 = "src/assets/2021_12_04.txt"; //Second test
+const filePath3 = "src/assets/2021_12_05.txt"; //Third test
 
-const file = appRoot.resolve(filePath);
+const [file1, file2, file3] = [
+  appRoot.resolve(filePath1),
+  appRoot.resolve(filePath2),
+  appRoot.resolve(filePath3),
+];
+const files = [file1, file2, file3];
+
+//To merge the document
+const mergedPath = appRoot.resolve("merged/transaction.txt");
+files.forEach((files) => {
+  fs.appendFile(mergedPath, files);
+});
 
 //This will generate a random result file name
 const resultPath = appRoot.resolve(
@@ -17,7 +28,7 @@ const resultPath = appRoot.resolve(
 //To read and convert the doc to JSON format
 const readDoc = async () => {
   try {
-    const data = await fs.readFile(file, { encoding: "utf8" });
+    const data = await fs.readFile(mergedPath, { encoding: "utf8" });
     if (!data) return;
     const transactions = data.split("----------NEW TRANSACTON-----------\r\n"); //split document by the NEW TRANSACTION line
 

@@ -1,0 +1,14 @@
+"Product","Average Price","Year","Quater","Last Year Average Price","Last Year Q4 Average Price"
+"P2",142222.22222222222,2020,3,"Not Applicable","Not Applicable"
+"P2",129000,2020,4,"Not Applicable","Not Applicable"
+"P2",128000,2021,3,142222.22222222222,129000
+"P2",133400,2021,4,129000,129000
+"P2",130000,2021,1,"Not Applicable",129000
+"P2",129000,2021,2,"Not Applicable",129000
+"P2",133000,2022,2,129000,133400
+"P1",150000,2020,3,"Not Applicable","Not Applicable"
+"P1",132465.75342465754,2020,4,"Not Applicable","Not Applicable"
+"P1",129806.45161290323,2021,4,129000,129000
+"P1",130000,2021,1,"Not Applicable",129000
+"P1",129000,2021,2,"Not Applicable",129000
+"P1",133000,2022,1,130000,133400

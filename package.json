@@ -1,0 +1,17 @@
+{
+  "name": "telonjobs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "app-root-path": "^3.0.0",
+    "json2csv": "^5.0.7",
+    "xlsx": "^0.18.5"
+  }
+}
